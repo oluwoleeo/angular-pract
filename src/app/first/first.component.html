@@ -1,0 +1,25 @@
+<div>Total persons: {{personsCount}}</div>
+<div>Total persons from in: {{getPersonsCount()}}</div>
+
+
+<p>
+    <label for="fname">First name: </label>
+    <input id="fname" type="text" placeholder="First name" #firstName/>
+</p>
+
+<p>
+    <label for="lname">Last name: </label>
+    <input id="lname" type="text" placeholder="Last name" #lastName />
+</p>
+
+<p>
+    <label for="age">Age: </label>
+    <input id="age" type="number" placeholder="Age" #age />
+</p>
+
+<p>
+    <label for="dob">DoB: </label>
+    <input id="dob" type="date" placeholder="Age" #date />
+</p>
+
+<input type="button" value="Add person" (click) = "onPersonAdd()">

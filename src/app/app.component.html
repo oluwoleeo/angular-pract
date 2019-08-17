@@ -1,0 +1,12 @@
+<ul>
+    <li *ngFor = "let p of persons">
+      First name: {{p.fname}}, 
+      last name: {{p.lname | uppercase}}, 
+      age: {{p.age}}, 
+      DoB: {{p.dob | date: 'fullDate'}}
+    </li>
+</ul>
+<br>
+<app-first [personsCount] = "persons.length" (personAdded) = "onPersonAdd($event)"></app-first>
+
+<router-outlet></router-outlet>
