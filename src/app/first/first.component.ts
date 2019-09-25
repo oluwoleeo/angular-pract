@@ -20,8 +20,8 @@ export class FirstComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.personAdded.emit(new Person('Oluwaremi', 'Oluwole', 30, new Date('1989/4/19')));
-    this.dataService.anotherPersonAdded.next(new Person('Adetoro', 'Thompson', 25, new Date('1994-03-23')));
+    this.personAdded.emit(new Person('Oluwaremi', 'Oluwole', 3, new Date('1998/4/19')));
+    this.dataService.anotherPersonAdded.next(new Person('Adetoro', 'Thompson', 52, new Date('1949-03-23')));
   }
 
   onPersonAdd() {
